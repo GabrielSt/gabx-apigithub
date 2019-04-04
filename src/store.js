@@ -3,19 +3,10 @@ import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 import promise from 'redux-promise';
 
-const initialState = {};
-
 const middlewares = [thunk, promise];
 
-const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 
-const store = applyMiddleware(...middlewares)(createStore)(rootReducer, devTools)
-
-
-// const store = createStore(
-//     rootReducer,
-//     initialState,
-//     applyMiddleware(...middlewares)
-// );
+const store = applyMiddleware(...middlewares)(createStore)(rootReducer, devTools);
 
 export default store;

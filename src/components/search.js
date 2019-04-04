@@ -29,14 +29,19 @@ class Search extends Component {
     render() {
           
       return (
-        <div className="row">
-          <div className="col-sm-4 text-left" style={{marginTop: 20}}>
+        <div>
+          <div className="heading-primary--sub">
             <input type="text"
-              style={{marginRight: 10}}
+              className="searchIput" 
+              placeholder="Full name" 
+              id="name"
               onChange={this.handleChange}
               onKeyPress={ (target) => { if (target.charCode === 13) this.handleClick(); }}
+              required 
             />
-            <button onClick={this.handleClick} >Search</button>
+          </div>
+          <div className="heading-primary--sub">
+            <a href="#card" class="btn btn--white btn--animated" onClick={this.handleClick}>Pesquisar</a>
           </div>
         </div>
       );
