@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { requestUser } from '../actions/searchActions';
+import { Link } from 'react-router-dom';
 
 class Search extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class Search extends Component {
       }
       
       this.props.requestUser(this.state.name);
-      console.log(this.state.name);
+      this.props.history.push("/userProfile");
     }
 
     handleChange(e) {
@@ -41,7 +42,7 @@ class Search extends Component {
             />
           </div>
           <div className="heading-primary--sub">
-            <a href="#card" class="btn btn--white btn--animated" onClick={this.handleClick}>Pesquisar</a>
+            <Link to={`/userProfile/${this.state.name}`} className="btn btn--white btn--animated">Pesquisar</Link>
           </div>
         </div>
       );

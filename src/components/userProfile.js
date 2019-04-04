@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
 
 // import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -16,8 +17,9 @@ class UserProfile extends Component {
             "left": 0,
             "top": tesNode.offsetTop
         });
-        // window.scrollTo(0, tesNode.offsetTop);
-
+    }
+    componentWillMount(){
+        this.props.requestUser(this.props.match.params.userName);
     }
     render() {
         const user = this.props.user || {};
@@ -49,7 +51,7 @@ class UserProfile extends Component {
                                         <p className="card__price-only">{user.public_repos}</p>
                                         <p className="card__price-value">Repositórios</p>
                                     </div>
-                                    <a href="#popup" className="btn btn--white">Me mostre!</a>
+                                    <Link to={`/reposList/${user.login}`} className="btn btn--white">Me mostre!</Link>
                                 </div>
                             </div>
                         </div>

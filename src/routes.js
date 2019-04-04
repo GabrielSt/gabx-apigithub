@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from './components/home';
@@ -9,17 +9,23 @@ import Header from './components/header';
 import Error from './components/error'
 
 
-export default props => (
-    <BrowserRouter>
-        <div className="App">
-            <Header />
-            <Switch>
-                <Route path="/" component={Home} exact />
-                <Route path="/userProfile" component={UserProfile} />
-                <Route path="/reposList" component={ReposList} />
-                <Route path="/repoDetail" component={RepoDetail} />
-                <Route component={Error} />
-            </Switch>
-        </div>
-    </BrowserRouter>
-)
+class Routes extends Component {
+    render() {
+        return (
+            <BrowserRouter>
+                <div className="App">
+                    <Header />
+                    <Switch>
+                        <Route path="/" component={Home} exact />
+                        <Route path="/userProfile/:userName" component={UserProfile} />
+                        <Route path="/reposList/:userName" component={ReposList} />
+                        <Route path="/repoDetail" component={RepoDetail} />
+                        <Route component={Error} />
+                    </Switch>
+                </div>
+            </BrowserRouter>
+        );
+    }
+}
+
+export default Routes;
