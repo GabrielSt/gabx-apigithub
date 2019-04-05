@@ -1,1 +1,3 @@
 export const USER_FETCHED = 'USER_FETCHED';
+export const REPO_LIST_FETCHED = 'REPO_LIST_FETCHED';
+export const REPO_FETCHED = 'REPO_FETCHED';

@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 
-// import { bindActionCreators } from 'redux';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { requestUser } from '../actions/searchActions';
-
-// import { Container } from './styles';
 
 class UserProfile extends Component {
     componentWillReceiveProps(newProps) {
@@ -72,7 +70,7 @@ const mapStateToProps = state => ({
     user: state.user.currentUser
 });
 
-// const mapDispatchToProps = dispatch =>
-//   bindActionCreators(Actions, dispatch);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ requestUser }, dispatch);
 
-export default connect(mapStateToProps, { requestUser })(UserProfile)
+export default connect(mapStateToProps, mapDispatchToProps)(UserProfile)
