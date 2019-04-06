@@ -1,8 +1,8 @@
-import { USER_FETCHED } from './constants';
+import { USER_FETCHED, USER_REQUESTED } from './constants';
 import axios from 'axios';
 import toastr from 'toastr';
 
-export function requestUser(name) {
+ function getUser(name) {
     return dispatch => 
         axios.get(`https://api.github.com/users/${name}`)
         .then(resp => {
@@ -14,9 +14,22 @@ export function requestUser(name) {
   }
 
 
-  export function receiveUser(user) {
+  function userRequested() {
+    return {
+      type: USER_REQUESTED,
+    };
+  }
+
+  function receiveUser(user) {
     return {
       type: USER_FETCHED,
       payload: user,
     };
   }
+
+  export function requestUser(name) {
+    return [
+        userRequested(),
+        getUser(name),
+    ]
+}

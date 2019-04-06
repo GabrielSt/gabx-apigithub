@@ -19,6 +19,11 @@ class UserProfile extends Component {
     componentWillMount(){
         this.props.requestUser(this.props.match.params.userName);
     }
+    componentDidUpdate(prevProps){
+        if(this.props.match.params.userName !== prevProps.match.params.userName) {
+            this.props.requestUser(this.props.match.params.userName);
+        }
+    }
     render() {
         const user = this.props.user || {};
         return (

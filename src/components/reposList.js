@@ -3,17 +3,28 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
-import { requestRepoList } from '../actions/repoActions';
+import Pagination from "react-js-pagination";
+
+import { requestRepoList, changeActivePage } from '../actions/repoActions';
 
 
 class ReposList extends Component {
+    constructor(props) {
+        super(props);
+
+        this.handlePageClick = this.handlePageClick.bind(this);
+        // this.sortBy = this.sortBy.bind(this);    
+    }
 
   componentWillMount() {
     this.props.requestRepoList(this.props.match.params.userName);
   }
 
-  renderRows() {
-    const repositories = this.props.repositories || [];
+  handlePageClick(eventKey) {
+    this.props.changeActivePage(eventKey);
+  }
+
+  renderRows(repositories) {
     return repositories.map(rep => (
         <tr key={rep.id}>
             <td>{rep.name}</td>
@@ -24,8 +35,11 @@ class ReposList extends Component {
   }
 
   render() {
+    const { repositories, activePage, sortBy } = this.props;
+    const start = (activePage - 1) * 10;
+    const reposToShow = repositories.slice(start, start + 10);
     return (
-        <div>
+        <div>            
             <table className='table'>
                 <thead>
                     <tr>
@@ -35,9 +49,20 @@ class ReposList extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {this.renderRows()}
+                    {this.renderRows(reposToShow)}
                 </tbody>
             </table>
+            <div className="">
+                {
+                    <Pagination
+                        activePage={activePage}
+                        itemsCountPerPage={10}
+                        totalItemsCount={repositories.length}
+                        pageRangeDisplayed={5}
+                        onChange={this.handlePageClick}
+                    />
+                }
+            </div>
         </div>
     )
   }
@@ -45,13 +70,15 @@ class ReposList extends Component {
 
 ReposList.propTypes = {
     requestRepoList: PropTypes.func.isRequired,
-    // repositories: PropTypes.arrayOf(PropTypes.object).isRequired
+    repositories: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 const mapStateToProps = state => ({
-    repositories: state.repositories.repoList
+    repositories: state.repositories.repoList,
+    activePage: state.repositories.activePage,
+    sortBy: state.repositories.sortBy
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({ requestRepoList }, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators({ requestRepoList, changeActivePage }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(ReposList)

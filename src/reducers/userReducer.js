@@ -1,4 +1,4 @@
-import { USER_FETCHED } from '../actions/constants';
+import { USER_FETCHED, USER_REQUESTED } from '../actions/constants';
 
 const initialState = {
     currentUser: {}
@@ -6,6 +6,11 @@ const initialState = {
 
 function userReducer(state = initialState, action) {
     switch(action.type) {
+        case USER_REQUESTED:
+            return {
+                ...state,
+                currentUser: {}
+            }
         case USER_FETCHED:
             return {
                 ...state,
