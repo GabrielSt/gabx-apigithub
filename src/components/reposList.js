@@ -46,7 +46,7 @@ class ReposList extends Component {
     const start = (activePage - 1) * 10;
     const reposToShow = repositories.slice(start, start + 10);
     return (
-      <div>
+      <div className="listBox">
         <table className="table">
           <thead>
             <tr>

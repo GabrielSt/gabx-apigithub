@@ -13,8 +13,8 @@ function Header(props) {
       </div>
       <div className="header__text-box">
         <h1 className="heading-primary">
-          <span className="heading-primary--main">Github</span>
-          <span className="heading-primary--sub">Busque aqui o usuário</span>
+          <span className="heading-primary--main">Gitfinder</span>
+          <span className="heading-primary--sub">Search users here</span>
         </h1>
         <Search />
       </div>

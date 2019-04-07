@@ -8,22 +8,51 @@ import { requestRepo } from "../actions/repoActions";
 // import { Container } from './styles';
 
 class RepoDetail extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
   componentWillMount() {
     this.props.requestRepo(
       this.props.match.params.userName,
       this.props.match.params.repoName
     );
   }
+  handleClick() {
+    window.location = this.props.repositorie.html_url;
+  }
   render() {
     const { repositorie } = this.props;
     return (
-      <div>
-        <h1>{repositorie.name}</h1>
-        <h3>{repositorie.description}</h3>
-        <h3>{repositorie.stargazers_count}</h3>
-        <h3>{repositorie.language}</h3>
-        <h3>{repositorie.url}</h3>
-      </div>
+      // <div>
+      //   <h1>{repositorie.name}</h1>
+      //   <h3>{repositorie.description}</h3>
+      //   <h3>{repositorie.stargazers_count}</h3>
+      //   <h3>{repositorie.language}</h3>
+      //   <h3>{repositorie.url}</h3>
+      // </div>
+      <section class="section-repositorie">
+        <div class="row">
+          <div class="col-1-of-3" />
+
+          <div class="col-1-of-3">
+            <div class="repositorie-box" onClick={this.handleClick}>
+              <i class="repositorie-box__icon fa fa-github" />
+              <h3 class="heading-secondary u-margin-bottom-small">
+                {repositorie.name}
+              </h3>
+              <p class="repositorie-box__text">{repositorie.description}</p>
+              <p class="repositorie-box__text">{repositorie.language}</p>
+              <p class="repositorie-box__text">
+                {repositorie.stargazers_count}
+                <i class="icon fa fa-star" />
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-3" />
+        </div>
+      </section>
     );
   }
 }

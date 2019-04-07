@@ -206,6 +206,16 @@ body {
 .header__logo {
   height: 8.5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .header__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  .header__logo {
+    height: 4rem;
+  }
+}
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -225,7 +235,7 @@ body {
   display: block;
   font-size: 6rem;
   font-weight: 700;
-  letter-spacing: 3.5rem;
+  letter-spacing: 2.5rem;
   margin-right: -3.5rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -251,6 +261,12 @@ body {
   .heading-primary--sub {
     letter-spacing: 0.5rem;
   }
+}
+
+.heading-secondary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .btn,
@@ -667,7 +683,7 @@ a {
   color: #55c57a;
   background: #fff;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.2rem;
 }
 
 .pagination li a:hover {
@@ -688,7 +704,7 @@ a {
 }
 
 .icon {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #55c57ae3;
 }
 
@@ -725,4 +741,66 @@ a {
   height: 8rem;
   top: 3.5rem;
   left: 7rem;
+}
+
+.listBox {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(46, 177, 57, 0.055);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .listBox {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.section-repositorie {
+  padding: 20rem 0;
+  margin-top: -10rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-repositorie {
+    padding: 10rem 0;
+  }
+}
+
+.repositorie-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  background-color: rgba(46, 177, 57, 0.055);
+  cursor: pointer;
+  text-decoration: none !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .repositorie-box {
+    padding: 2rem;
+  }
+}
+.repositorie-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media only screen and (max-width: 56.25em) {
+  .repositorie-box__icon {
+    margin-bottom: 0;
+  }
+}
+.repositorie-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
 }

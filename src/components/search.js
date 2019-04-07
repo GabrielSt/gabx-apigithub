@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { requestUser } from "../actions/searchActions";
-import { Link } from "react-router-dom";
-
+import { Link, withRouter } from "react-router-dom";
 class Search extends Component {
   constructor(props) {
     super(props);
@@ -19,8 +18,7 @@ class Search extends Component {
       e.preventDefault();
     }
 
-    this.props.requestUser(this.state.name);
-    this.props.history.push("/userProfile");
+    this.props.history.push(`/userProfile/${this.state.name}`);
   }
 
   handleChange(e) {
@@ -48,7 +46,7 @@ class Search extends Component {
             to={`/userProfile/${this.state.name}`}
             className="btn btn--white btn--animated"
           >
-            Pesquisar
+            Search
           </Link>
         </div>
       </div>
@@ -60,7 +58,9 @@ Search.propTypes = {
   requestUser: PropTypes.func.isRequired
 };
 
-export default connect(
-  null,
-  { requestUser }
-)(Search);
+export default withRouter(
+  connect(
+    null,
+    { requestUser }
+  )(Search)
+);
