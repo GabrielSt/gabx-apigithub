@@ -5,14 +5,18 @@ import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 import Pagination from "react-js-pagination";
 
-import { requestRepoList, changeActivePage } from "../actions/repoActions";
+import {
+  requestRepoList,
+  changeActivePage,
+  sortRepos
+} from "../actions/repoActions";
 
 class ReposList extends Component {
   constructor(props) {
     super(props);
 
     this.handlePageClick = this.handlePageClick.bind(this);
-    // this.sortBy = this.sortBy.bind(this);
+    this.sortByField = this.sortByField.bind(this);
   }
 
   componentWillMount() {
@@ -21,6 +25,11 @@ class ReposList extends Component {
 
   handlePageClick(eventKey) {
     this.props.changeActivePage(eventKey);
+  }
+
+  sortByField(field) {
+    this.props.sortRepos(field);
+    console.log(field + " teste");
   }
 
   renderRows(repositories) {
@@ -50,9 +59,18 @@ class ReposList extends Component {
         <table className="table">
           <thead>
             <tr>
-              <th>Name</th>
+              <th onClick={() => this.sortByField("name")} className="sortable">
+                Name
+                <i className="icon fa fa-sort sortable-icon" />
+              </th>
               <th>Description</th>
-              <th>StarGazers</th>
+              <th
+                onClick={() => this.sortByField("stars")}
+                className="sortable"
+              >
+                Stars
+                <i className="icon fa fa-sort sortable-icon" />
+              </th>
               <th>Details</th>
             </tr>
           </thead>
@@ -86,7 +104,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ requestRepoList, changeActivePage }, dispatch);
+  bindActionCreators(
+    { requestRepoList, changeActivePage, sortRepos },
+    dispatch
+  );
 
 export default connect(
   mapStateToProps,
