@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
-import { Link } from "react-router-dom";
-
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { requestUser } from "../actions/searchActions";
+import LinkButton from "../linkButton";
+import UserProfile from "../../components/userProfile";
 
-class UserProfile extends Component {
+import { requestUser } from "../../actions/userActions";
+
+import "./styles.css";
+
+class UserProfileContainer extends Component {
   componentWillReceiveProps(newProps) {
     const tesNode = ReactDOM.findDOMNode(this.refs.userProfile);
     window.scrollTo({
@@ -37,7 +40,7 @@ class UserProfile extends Component {
           <div className="col-1-of-3">
             <div className="card">
               <div className="card__side card__side--front">
-                <div className="card__picture card__picture--2">&nbsp;</div>
+                <div className="card__picture">&nbsp;</div>
 
                 <img
                   src={user.avatar_url}
@@ -46,9 +49,7 @@ class UserProfile extends Component {
                 />
 
                 <h4 className="card__heading">
-                  <span className="card__heading-span card__heading-span--2">
-                    {user.login}
-                  </span>
+                  <span className="card__heading-span">{user.login}</span>
                 </h4>
                 <div className="card__details">
                   <ul>
@@ -59,18 +60,16 @@ class UserProfile extends Component {
                   </ul>
                 </div>
               </div>
-              <div className="card__side card__side--back card__side--back-2">
+              <div className="card__side card__side--back">
                 <div className="card__cta">
                   <div className="card__price-box">
                     <p className="card__price-only">{user.public_repos}</p>
                     <p className="card__price-value">Repositories</p>
                   </div>
-                  <Link
-                    to={`/reposList/${user.login}`}
-                    className="btn btn--white"
-                  >
-                    Show me!
-                  </Link>
+                  <LinkButton
+                    goTo={`/reposList/${user.login}`}
+                    btnLabel="Show me!"
+                  />
                 </div>
               </div>
             </div>
@@ -97,4 +96,4 @@ const mapDispatchToProps = dispatch =>
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(UserProfile);
+)(UserProfileContainer);

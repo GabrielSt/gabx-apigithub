@@ -1,0 +1,43 @@
+.section-repositorie {
+  padding: 20rem 0;
+  margin-top: -10rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-repositorie {
+    padding: 10rem 0;
+  }
+}
+
+.repositorie-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  background-color: rgba(46, 177, 57, 0.055);
+  cursor: pointer;
+  text-decoration: none !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .repositorie-box {
+    padding: 2rem;
+  }
+}
+.repositorie-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media only screen and (max-width: 56.25em) {
+  .repositorie-box__icon {
+    margin-bottom: 0;
+  }
+}
+.repositorie-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}

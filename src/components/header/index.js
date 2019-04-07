@@ -1,6 +1,9 @@
 import React from "react";
-import Logo from "../resources/images/github2.png";
-import Search from "./search";
+
+import Logo from "../../resources/images/github2.png";
+import Search from "../search";
+import "./styles.css";
+
 import { Link } from "react-router-dom";
 
 function Header(props) {

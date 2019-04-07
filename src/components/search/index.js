@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { requestUser } from "../actions/searchActions";
-import { Link, withRouter } from "react-router-dom";
+import { requestUser } from "../../actions/userActions";
+import { withRouter } from "react-router-dom";
+import LinkButton from "../linkButton";
+
+import "./styles.css";
+
 class Search extends Component {
   constructor(props) {
     super(props);
@@ -42,12 +46,10 @@ class Search extends Component {
           />
         </div>
         <div className="heading-primary--sub">
-          <Link
-            to={`/userProfile/${this.state.name}`}
-            className="btn btn--white btn--animated"
-          >
-            Search
-          </Link>
+          <LinkButton
+            goTo={`/userProfile/${this.state.name}`}
+            btnLabel="Search"
+          />
         </div>
       </div>
     );

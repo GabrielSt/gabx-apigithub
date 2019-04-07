@@ -5,11 +5,13 @@ import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 import Pagination from "react-js-pagination";
 
+import "./styles.css";
+
 import {
   requestRepoList,
   changeActivePage,
   sortRepos
-} from "../actions/repoActions";
+} from "../../actions/repoActions";
 
 class ReposList extends Component {
   constructor(props) {
@@ -39,10 +41,7 @@ class ReposList extends Component {
         <td>{rep.description}</td>
         <td>{rep.stargazers_count}</td>
         <td>
-          <Link
-            to={`/repoDetail/${rep.owner.login}/${rep.name}`}
-            className="linkOnTable"
-          >
+          <Link to={`/repoDetail/${rep.owner.login}/${rep.name}`}>
             <i className="fa fa-info-circle icon" />
           </Link>
         </td>
@@ -51,7 +50,7 @@ class ReposList extends Component {
   }
 
   render() {
-    const { repositories, activePage, sortBy } = this.props;
+    const { repositories, activePage } = this.props;
     const start = (activePage - 1) * 10;
     const reposToShow = repositories.slice(start, start + 10);
     return (

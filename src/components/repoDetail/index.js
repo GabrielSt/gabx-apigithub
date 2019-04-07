@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
-import { requestRepo } from "../actions/repoActions";
+import { requestRepo } from "../../actions/repoActions";
 
-// import { Container } from './styles';
+import "./styles.css";
 
 class RepoDetail extends Component {
   constructor(props) {
@@ -24,13 +23,6 @@ class RepoDetail extends Component {
   render() {
     const { repositorie } = this.props;
     return (
-      // <div>
-      //   <h1>{repositorie.name}</h1>
-      //   <h3>{repositorie.description}</h3>
-      //   <h3>{repositorie.stargazers_count}</h3>
-      //   <h3>{repositorie.language}</h3>
-      //   <h3>{repositorie.url}</h3>
-      // </div>
       <section class="section-repositorie">
         <div class="row">
           <div class="col-1-of-3" />
