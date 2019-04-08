@@ -1,30 +1,18 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import LinkButton from "../linkButton";
-
-import { requestUser } from "../../actions/userActions";
 
 import "./styles.css";
 
 class UserProfile extends Component {
-  componentWillReceiveProps(newProps) {
+  componentDidMount() {
     const tesNode = ReactDOM.findDOMNode(this.refs.userProfile);
     window.scrollTo({
       behavior: "smooth",
       left: 0,
       top: tesNode.offsetTop
     });
-  }
-  componentWillMount() {
-    this.props.requestUser(this.props.match.params.userName);
-  }
-  componentDidUpdate(prevProps) {
-    if (this.props.match.params.userName !== prevProps.match.params.userName) {
-      this.props.requestUser(this.props.match.params.userName);
-    }
   }
   render() {
     const user = this.props.user || {};
@@ -43,8 +31,8 @@ class UserProfile extends Component {
 
                 <img
                   src={user.avatar_url}
-                  alt="Person on a tour"
-                  className="story__img"
+                  alt="User"
+                  className="card_user_img"
                 />
 
                 <h4 className="card__heading">
@@ -54,16 +42,16 @@ class UserProfile extends Component {
                   <ul>
                     <li>Email: {user.email}</li>
                     <li>Bio: {user.bio}</li>
-                    <li>Seguidores: {user.followers}</li>
-                    <li>Seguindo: {user.following}</li>
+                    <li>Followers: {user.followers}</li>
+                    <li>Following: {user.following}</li>
                   </ul>
                 </div>
               </div>
               <div className="card__side card__side--back">
                 <div className="card__cta">
-                  <div className="card__price-box">
-                    <p className="card__price-only">{user.public_repos}</p>
-                    <p className="card__price-value">Repositories</p>
+                  <div className="card__repo-box">
+                    <p className="card__repo-count">{user.public_repos}</p>
+                    <p className="card__repo-label">Repositories</p>
                   </div>
                   <LinkButton
                     goTo={`/reposList/${user.login}`}
@@ -81,18 +69,7 @@ class UserProfile extends Component {
 }
 
 UserProfile.propTypes = {
-  requestUser: PropTypes.func.isRequired,
   user: PropTypes.object.isRequired
 };
 
-const mapStateToProps = state => ({
-  user: state.user.currentUser
-});
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators({ requestUser }, dispatch);
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(UserProfile);
+export default UserProfile;

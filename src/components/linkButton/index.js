@@ -6,7 +6,7 @@ import "./styles.css";
 class LinkButton extends Component {
   render() {
     return (
-      <Link to={this.props.goTo} className="btn btn--white btn--animated">
+      <Link to={this.props.goTo} className="btn btn--white">
         {this.props.btnLabel}
       </Link>
     );

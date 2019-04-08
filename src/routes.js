@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./components/home";
-import UserProfile from "./components/userProfile";
+import UserProfile from "./containers/userProfileContainer";
 import ReposList from "./components/reposList";
 import RepoDetail from "./components/repoDetail";
 import Header from "./components/header";

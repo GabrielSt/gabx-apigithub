@@ -87,16 +87,16 @@
   width: 90%;
   text-align: center;
 }
-.card__price-box {
+.card__repo-box {
   text-align: center;
   color: #fff;
   margin-bottom: 8rem;
 }
-.card__price-only {
+.card__repo-count {
   font-size: 4rem;
   text-transform: uppercase;
 }
-.card__price-value {
+.card__repo-label {
   font-size: 5rem;
   font-weight: 100;
 }
@@ -130,10 +130,21 @@
     width: 100%;
     padding: 7rem 4rem 4rem 4rem;
   }
-  .card__price-box {
+  .card__repo-box {
     margin-bottom: 3rem;
   }
-  .card__price-value {
+  .card__repo-label {
     font-size: 3.5rem;
   }
+}
+.card_user_img {
+  transform: translateX(-4rem) scale(1.4);
+  backface-visibility: hidden;
+  transition: all 0.5s;
+  position: absolute;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  top: 3.5rem;
+  left: 7rem;
 }
