@@ -1,0 +1,725 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing RepoDetail component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepoDetail
+    repositorie={
+      Object {
+        "archive_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/{archive_format}{/ref}",
+        "archived": false,
+        "assignees_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/assignees{/user}",
+        "blobs_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/git/blobs{/sha}",
+        "branches_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/branches{/branch}",
+        "clone_url": "https://github.com/GabrielSt/gabx-apigithub.git",
+        "collaborators_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/collaborators{/collaborator}",
+        "comments_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/comments{/number}",
+        "commits_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/commits{/sha}",
+        "compare_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/compare/{base}...{head}",
+        "contents_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/contents/{+path}",
+        "contributors_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/contributors",
+        "created_at": "2019-04-03T16:32:20Z",
+        "default_branch": "master",
+        "deployments_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/deployments",
+        "description": "Desafio concrete Reactjs consumindo api do GitHub",
+        "disabled": false,
+        "downloads_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/downloads",
+        "events_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/events",
+        "fork": false,
+        "forks": 0,
+        "forks_count": 0,
+        "forks_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/forks",
+        "full_name": "GabrielSt/gabx-apigithub",
+        "git_commits_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/git/refs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/git/tags{/sha}",
+        "git_url": "git://github.com/GabrielSt/gabx-apigithub.git",
+        "has_downloads": true,
+        "has_issues": true,
+        "has_pages": false,
+        "has_projects": true,
+        "has_wiki": true,
+        "homepage": null,
+        "hooks_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/hooks",
+        "html_url": "https://github.com/GabrielSt/gabx-apigithub",
+        "id": 179329479,
+        "issue_comment_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/issues/comments{/number}",
+        "issue_events_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/issues/events{/number}",
+        "issues_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/issues{/number}",
+        "keys_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/keys{/key_id}",
+        "labels_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/labels{/name}",
+        "language": "JavaScript",
+        "languages_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/languages",
+        "license": null,
+        "merges_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/merges",
+        "milestones_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/milestones{/number}",
+        "mirror_url": null,
+        "name": "gabx-apigithub",
+        "network_count": 0,
+        "node_id": "MDEwOlJlcG9zaXRvcnkxNzkzMjk0Nzk=",
+        "notifications_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/notifications{?since,all,participating}",
+        "open_issues": 0,
+        "open_issues_count": 0,
+        "owner": Object {
+          "avatar_url": "https://avatars2.githubusercontent.com/u/11239986?v=4",
+          "events_url": "https://api.github.com/users/GabrielSt/events{/privacy}",
+          "followers_url": "https://api.github.com/users/GabrielSt/followers",
+          "following_url": "https://api.github.com/users/GabrielSt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/GabrielSt/gists{/gist_id}",
+          "gravatar_id": "",
+          "html_url": "https://github.com/GabrielSt",
+          "id": 11239986,
+          "login": "GabrielSt",
+          "node_id": "MDQ6VXNlcjExMjM5OTg2",
+          "organizations_url": "https://api.github.com/users/GabrielSt/orgs",
+          "received_events_url": "https://api.github.com/users/GabrielSt/received_events",
+          "repos_url": "https://api.github.com/users/GabrielSt/repos",
+          "site_admin": false,
+          "starred_url": "https://api.github.com/users/GabrielSt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/GabrielSt/subscriptions",
+          "type": "User",
+          "url": "https://api.github.com/users/GabrielSt",
+        },
+        "private": false,
+        "pulls_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/pulls{/number}",
+        "pushed_at": "2019-04-08T05:42:29Z",
+        "releases_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/releases{/id}",
+        "size": 1947,
+        "ssh_url": "git@github.com:GabrielSt/gabx-apigithub.git",
+        "stargazers_count": 0,
+        "stargazers_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/stargazers",
+        "statuses_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/statuses/{sha}",
+        "subscribers_count": 1,
+        "subscribers_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/subscribers",
+        "subscription_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/subscription",
+        "svn_url": "https://github.com/GabrielSt/gabx-apigithub",
+        "tags_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/tags",
+        "teams_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/teams",
+        "trees_url": "https://api.github.com/repos/GabrielSt/gabx-apigithub/git/trees{/sha}",
+        "updated_at": "2019-04-08T05:42:30Z",
+        "url": "https://api.github.com/repos/GabrielSt/gabx-apigithub",
+        "watchers": 0,
+        "watchers_count": 0,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        class="row"
+      >
+        <div
+          class="col-1-of-3"
+        />
+        <div
+          class="col-1-of-3"
+        >
+          <div
+            class="repositorie-box"
+            onClick={[Function]}
+          >
+            <i
+              class="repositorie-box__icon fa fa-github"
+            />
+            <h3
+              class="heading-secondary u-margin-bottom-small"
+            >
+              gabx-apigithub
+            </h3>
+            <p
+              class="repositorie-box__text"
+            >
+              Desafio concrete Reactjs consumindo api do GitHub
+            </p>
+            <p
+              class="repositorie-box__text"
+            >
+              JavaScript
+            </p>
+            <p
+              class="repositorie-box__text"
+            >
+              0
+              <i
+                class="icon fa fa-star"
+              />
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-1-of-3"
+        />
+      </div>,
+      "class": "section-repositorie",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            class="col-1-of-3"
+          />,
+          <div
+            class="col-1-of-3"
+          >
+            <div
+              class="repositorie-box"
+              onClick={[Function]}
+            >
+              <i
+                class="repositorie-box__icon fa fa-github"
+              />
+              <h3
+                class="heading-secondary u-margin-bottom-small"
+              >
+                gabx-apigithub
+              </h3>
+              <p
+                class="repositorie-box__text"
+              >
+                Desafio concrete Reactjs consumindo api do GitHub
+              </p>
+              <p
+                class="repositorie-box__text"
+              >
+                JavaScript
+              </p>
+              <p
+                class="repositorie-box__text"
+              >
+                0
+                <i
+                  class="icon fa fa-star"
+                />
+              </p>
+            </div>
+          </div>,
+          <div
+            class="col-1-of-3"
+          />,
+        ],
+        "class": "row",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "class": "col-1-of-3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              class="repositorie-box"
+              onClick={[Function]}
+            >
+              <i
+                class="repositorie-box__icon fa fa-github"
+              />
+              <h3
+                class="heading-secondary u-margin-bottom-small"
+              >
+                gabx-apigithub
+              </h3>
+              <p
+                class="repositorie-box__text"
+              >
+                Desafio concrete Reactjs consumindo api do GitHub
+              </p>
+              <p
+                class="repositorie-box__text"
+              >
+                JavaScript
+              </p>
+              <p
+                class="repositorie-box__text"
+              >
+                0
+                <i
+                  class="icon fa fa-star"
+                />
+              </p>
+            </div>,
+            "class": "col-1-of-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  class="repositorie-box__icon fa fa-github"
+                />,
+                <h3
+                  class="heading-secondary u-margin-bottom-small"
+                >
+                  gabx-apigithub
+                </h3>,
+                <p
+                  class="repositorie-box__text"
+                >
+                  Desafio concrete Reactjs consumindo api do GitHub
+                </p>,
+                <p
+                  class="repositorie-box__text"
+                >
+                  JavaScript
+                </p>,
+                <p
+                  class="repositorie-box__text"
+                >
+                  0
+                  <i
+                    class="icon fa fa-star"
+                  />
+                </p>,
+              ],
+              "class": "repositorie-box",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "repositorie-box__icon fa fa-github",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "gabx-apigithub",
+                  "class": "heading-secondary u-margin-bottom-small",
+                },
+                "ref": null,
+                "rendered": "gabx-apigithub",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Desafio concrete Reactjs consumindo api do GitHub",
+                  "class": "repositorie-box__text",
+                },
+                "ref": null,
+                "rendered": "Desafio concrete Reactjs consumindo api do GitHub",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "JavaScript",
+                  "class": "repositorie-box__text",
+                },
+                "ref": null,
+                "rendered": "JavaScript",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    0,
+                    <i
+                      class="icon fa fa-star"
+                    />,
+                  ],
+                  "class": "repositorie-box__text",
+                },
+                "ref": null,
+                "rendered": Array [
+                  0,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "class": "icon fa fa-star",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "class": "col-1-of-3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          class="row"
+        >
+          <div
+            class="col-1-of-3"
+          />
+          <div
+            class="col-1-of-3"
+          >
+            <div
+              class="repositorie-box"
+              onClick={[Function]}
+            >
+              <i
+                class="repositorie-box__icon fa fa-github"
+              />
+              <h3
+                class="heading-secondary u-margin-bottom-small"
+              >
+                gabx-apigithub
+              </h3>
+              <p
+                class="repositorie-box__text"
+              >
+                Desafio concrete Reactjs consumindo api do GitHub
+              </p>
+              <p
+                class="repositorie-box__text"
+              >
+                JavaScript
+              </p>
+              <p
+                class="repositorie-box__text"
+              >
+                0
+                <i
+                  class="icon fa fa-star"
+                />
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-1-of-3"
+          />
+        </div>,
+        "class": "section-repositorie",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              class="col-1-of-3"
+            />,
+            <div
+              class="col-1-of-3"
+            >
+              <div
+                class="repositorie-box"
+                onClick={[Function]}
+              >
+                <i
+                  class="repositorie-box__icon fa fa-github"
+                />
+                <h3
+                  class="heading-secondary u-margin-bottom-small"
+                >
+                  gabx-apigithub
+                </h3>
+                <p
+                  class="repositorie-box__text"
+                >
+                  Desafio concrete Reactjs consumindo api do GitHub
+                </p>
+                <p
+                  class="repositorie-box__text"
+                >
+                  JavaScript
+                </p>
+                <p
+                  class="repositorie-box__text"
+                >
+                  0
+                  <i
+                    class="icon fa fa-star"
+                  />
+                </p>
+              </div>
+            </div>,
+            <div
+              class="col-1-of-3"
+            />,
+          ],
+          "class": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "class": "col-1-of-3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                class="repositorie-box"
+                onClick={[Function]}
+              >
+                <i
+                  class="repositorie-box__icon fa fa-github"
+                />
+                <h3
+                  class="heading-secondary u-margin-bottom-small"
+                >
+                  gabx-apigithub
+                </h3>
+                <p
+                  class="repositorie-box__text"
+                >
+                  Desafio concrete Reactjs consumindo api do GitHub
+                </p>
+                <p
+                  class="repositorie-box__text"
+                >
+                  JavaScript
+                </p>
+                <p
+                  class="repositorie-box__text"
+                >
+                  0
+                  <i
+                    class="icon fa fa-star"
+                  />
+                </p>
+              </div>,
+              "class": "col-1-of-3",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    class="repositorie-box__icon fa fa-github"
+                  />,
+                  <h3
+                    class="heading-secondary u-margin-bottom-small"
+                  >
+                    gabx-apigithub
+                  </h3>,
+                  <p
+                    class="repositorie-box__text"
+                  >
+                    Desafio concrete Reactjs consumindo api do GitHub
+                  </p>,
+                  <p
+                    class="repositorie-box__text"
+                  >
+                    JavaScript
+                  </p>,
+                  <p
+                    class="repositorie-box__text"
+                  >
+                    0
+                    <i
+                      class="icon fa fa-star"
+                    />
+                  </p>,
+                ],
+                "class": "repositorie-box",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "repositorie-box__icon fa fa-github",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "gabx-apigithub",
+                    "class": "heading-secondary u-margin-bottom-small",
+                  },
+                  "ref": null,
+                  "rendered": "gabx-apigithub",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Desafio concrete Reactjs consumindo api do GitHub",
+                    "class": "repositorie-box__text",
+                  },
+                  "ref": null,
+                  "rendered": "Desafio concrete Reactjs consumindo api do GitHub",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "JavaScript",
+                    "class": "repositorie-box__text",
+                  },
+                  "ref": null,
+                  "rendered": "JavaScript",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      0,
+                      <i
+                        class="icon fa fa-star"
+                      />,
+                    ],
+                    "class": "repositorie-box__text",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    0,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "class": "icon fa fa-star",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "class": "col-1-of-3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

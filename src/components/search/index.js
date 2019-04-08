@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { requestUser } from "../../actions/userActions";
 import { withRouter } from "react-router-dom";
 import LinkButton from "../linkButton";
 
@@ -56,13 +53,4 @@ class Search extends Component {
   }
 }
 
-Search.propTypes = {
-  requestUser: PropTypes.func.isRequired
-};
-
-export default withRouter(
-  connect(
-    null,
-    { requestUser }
-  )(Search)
-);
+export default withRouter(Search);

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import PropTypes from "prop-types";
+
 import "./styles.css";
 
 class RepoDetail extends Component {
@@ -40,5 +42,9 @@ class RepoDetail extends Component {
     );
   }
 }
+
+RepoDetail.propTypes = {
+  repositorie: PropTypes.object.isRequired
+};
 
 export default RepoDetail;

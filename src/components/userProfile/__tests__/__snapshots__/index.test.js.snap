@@ -1,0 +1,1560 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing UserProfile component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserProfile
+    user={
+      Object {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/11239986?v=4",
+        "bio": "Software developer in .net/React",
+        "blog": "",
+        "company": null,
+        "created_at": "2015-02-28T04:09:04Z",
+        "email": null,
+        "events_url": "https://api.github.com/users/GabrielSt/events{/privacy}",
+        "followers": 0,
+        "followers_url": "https://api.github.com/users/GabrielSt/followers",
+        "following": 0,
+        "following_url": "https://api.github.com/users/GabrielSt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GabrielSt/gists{/gist_id}",
+        "gravatar_id": "",
+        "hireable": null,
+        "html_url": "https://github.com/GabrielSt",
+        "id": 11239986,
+        "location": null,
+        "login": "GabrielSt",
+        "name": "Gabriel Santos ",
+        "node_id": "MDQ6VXNlcjExMjM5OTg2",
+        "organizations_url": "https://api.github.com/users/GabrielSt/orgs",
+        "public_gists": 0,
+        "public_repos": 9,
+        "received_events_url": "https://api.github.com/users/GabrielSt/received_events",
+        "repos_url": "https://api.github.com/users/GabrielSt/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/GabrielSt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GabrielSt/subscriptions",
+        "type": "User",
+        "updated_at": "2019-04-04T01:38:22Z",
+        "url": "https://api.github.com/users/GabrielSt",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="row"
+      >
+        <div
+          className="col-1-of-3"
+        />
+        <div
+          className="col-1-of-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card__side card__side--front"
+            >
+              <div
+                className="card__picture"
+              >
+                 
+              </div>
+              <img
+                alt="User"
+                className="card_user_img"
+                src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+              />
+              <h4
+                className="card__heading"
+              >
+                <span
+                  className="card__heading-span"
+                >
+                  GabrielSt
+                </span>
+              </h4>
+              <div
+                className="card__details"
+              >
+                <ul>
+                  <li>
+                    Email: 
+                  </li>
+                  <li>
+                    Bio: 
+                    Software developer in .net/React
+                  </li>
+                  <li>
+                    Followers: 
+                    0
+                  </li>
+                  <li>
+                    Following: 
+                    0
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className="card__side card__side--back"
+            >
+              <div
+                className="card__cta"
+              >
+                <div
+                  className="card__repo-box"
+                >
+                  <p
+                    className="card__repo-count"
+                  >
+                    9
+                  </p>
+                  <p
+                    className="card__repo-label"
+                  >
+                    Repositories
+                  </p>
+                </div>
+                <LinkButton
+                  btnLabel="Show me!"
+                  goTo="/reposList/GabrielSt"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-1-of-3"
+        />
+      </div>,
+      "className": "section-userProfile",
+      "id": "section-userProfile",
+    },
+    "ref": "userProfile",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col-1-of-3"
+          />,
+          <div
+            className="col-1-of-3"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card__side card__side--front"
+              >
+                <div
+                  className="card__picture"
+                >
+                   
+                </div>
+                <img
+                  alt="User"
+                  className="card_user_img"
+                  src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                />
+                <h4
+                  className="card__heading"
+                >
+                  <span
+                    className="card__heading-span"
+                  >
+                    GabrielSt
+                  </span>
+                </h4>
+                <div
+                  className="card__details"
+                >
+                  <ul>
+                    <li>
+                      Email: 
+                    </li>
+                    <li>
+                      Bio: 
+                      Software developer in .net/React
+                    </li>
+                    <li>
+                      Followers: 
+                      0
+                    </li>
+                    <li>
+                      Following: 
+                      0
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="card__side card__side--back"
+              >
+                <div
+                  className="card__cta"
+                >
+                  <div
+                    className="card__repo-box"
+                  >
+                    <p
+                      className="card__repo-count"
+                    >
+                      9
+                    </p>
+                    <p
+                      className="card__repo-label"
+                    >
+                      Repositories
+                    </p>
+                  </div>
+                  <LinkButton
+                    btnLabel="Show me!"
+                    goTo="/reposList/GabrielSt"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>,
+          <div
+            className="col-1-of-3"
+          />,
+        ],
+        "className": "row",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "col-1-of-3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="card"
+            >
+              <div
+                className="card__side card__side--front"
+              >
+                <div
+                  className="card__picture"
+                >
+                   
+                </div>
+                <img
+                  alt="User"
+                  className="card_user_img"
+                  src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                />
+                <h4
+                  className="card__heading"
+                >
+                  <span
+                    className="card__heading-span"
+                  >
+                    GabrielSt
+                  </span>
+                </h4>
+                <div
+                  className="card__details"
+                >
+                  <ul>
+                    <li>
+                      Email: 
+                    </li>
+                    <li>
+                      Bio: 
+                      Software developer in .net/React
+                    </li>
+                    <li>
+                      Followers: 
+                      0
+                    </li>
+                    <li>
+                      Following: 
+                      0
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="card__side card__side--back"
+              >
+                <div
+                  className="card__cta"
+                >
+                  <div
+                    className="card__repo-box"
+                  >
+                    <p
+                      className="card__repo-count"
+                    >
+                      9
+                    </p>
+                    <p
+                      className="card__repo-label"
+                    >
+                      Repositories
+                    </p>
+                  </div>
+                  <LinkButton
+                    btnLabel="Show me!"
+                    goTo="/reposList/GabrielSt"
+                  />
+                </div>
+              </div>
+            </div>,
+            "className": "col-1-of-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="card__side card__side--front"
+                >
+                  <div
+                    className="card__picture"
+                  >
+                     
+                  </div>
+                  <img
+                    alt="User"
+                    className="card_user_img"
+                    src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                  />
+                  <h4
+                    className="card__heading"
+                  >
+                    <span
+                      className="card__heading-span"
+                    >
+                      GabrielSt
+                    </span>
+                  </h4>
+                  <div
+                    className="card__details"
+                  >
+                    <ul>
+                      <li>
+                        Email: 
+                      </li>
+                      <li>
+                        Bio: 
+                        Software developer in .net/React
+                      </li>
+                      <li>
+                        Followers: 
+                        0
+                      </li>
+                      <li>
+                        Following: 
+                        0
+                      </li>
+                    </ul>
+                  </div>
+                </div>,
+                <div
+                  className="card__side card__side--back"
+                >
+                  <div
+                    className="card__cta"
+                  >
+                    <div
+                      className="card__repo-box"
+                    >
+                      <p
+                        className="card__repo-count"
+                      >
+                        9
+                      </p>
+                      <p
+                        className="card__repo-label"
+                      >
+                        Repositories
+                      </p>
+                    </div>
+                    <LinkButton
+                      btnLabel="Show me!"
+                      goTo="/reposList/GabrielSt"
+                    />
+                  </div>
+                </div>,
+              ],
+              "className": "card",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="card__picture"
+                    >
+                       
+                    </div>,
+                    <img
+                      alt="User"
+                      className="card_user_img"
+                      src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                    />,
+                    <h4
+                      className="card__heading"
+                    >
+                      <span
+                        className="card__heading-span"
+                      >
+                        GabrielSt
+                      </span>
+                    </h4>,
+                    <div
+                      className="card__details"
+                    >
+                      <ul>
+                        <li>
+                          Email: 
+                        </li>
+                        <li>
+                          Bio: 
+                          Software developer in .net/React
+                        </li>
+                        <li>
+                          Followers: 
+                          0
+                        </li>
+                        <li>
+                          Following: 
+                          0
+                        </li>
+                      </ul>
+                    </div>,
+                  ],
+                  "className": "card__side card__side--front",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": " ",
+                      "className": "card__picture",
+                    },
+                    "ref": null,
+                    "rendered": " ",
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "User",
+                      "className": "card_user_img",
+                      "src": "https://avatars2.githubusercontent.com/u/11239986?v=4",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <span
+                        className="card__heading-span"
+                      >
+                        GabrielSt
+                      </span>,
+                      "className": "card__heading",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "GabrielSt",
+                        "className": "card__heading-span",
+                      },
+                      "ref": null,
+                      "rendered": "GabrielSt",
+                      "type": "span",
+                    },
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <ul>
+                        <li>
+                          Email: 
+                        </li>
+                        <li>
+                          Bio: 
+                          Software developer in .net/React
+                        </li>
+                        <li>
+                          Followers: 
+                          0
+                        </li>
+                        <li>
+                          Following: 
+                          0
+                        </li>
+                      </ul>,
+                      "className": "card__details",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <li>
+                            Email: 
+                          </li>,
+                          <li>
+                            Bio: 
+                            Software developer in .net/React
+                          </li>,
+                          <li>
+                            Followers: 
+                            0
+                          </li>,
+                          <li>
+                            Following: 
+                            0
+                          </li>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Email: ",
+                              null,
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Email: ",
+                            null,
+                          ],
+                          "type": "li",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Bio: ",
+                              "Software developer in .net/React",
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Bio: ",
+                            "Software developer in .net/React",
+                          ],
+                          "type": "li",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Followers: ",
+                              0,
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Followers: ",
+                            0,
+                          ],
+                          "type": "li",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "Following: ",
+                              0,
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Following: ",
+                            0,
+                          ],
+                          "type": "li",
+                        },
+                      ],
+                      "type": "ul",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="card__cta"
+                  >
+                    <div
+                      className="card__repo-box"
+                    >
+                      <p
+                        className="card__repo-count"
+                      >
+                        9
+                      </p>
+                      <p
+                        className="card__repo-label"
+                      >
+                        Repositories
+                      </p>
+                    </div>
+                    <LinkButton
+                      btnLabel="Show me!"
+                      goTo="/reposList/GabrielSt"
+                    />
+                  </div>,
+                  "className": "card__side card__side--back",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="card__repo-box"
+                      >
+                        <p
+                          className="card__repo-count"
+                        >
+                          9
+                        </p>
+                        <p
+                          className="card__repo-label"
+                        >
+                          Repositories
+                        </p>
+                      </div>,
+                      <LinkButton
+                        btnLabel="Show me!"
+                        goTo="/reposList/GabrielSt"
+                      />,
+                    ],
+                    "className": "card__cta",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <p
+                            className="card__repo-count"
+                          >
+                            9
+                          </p>,
+                          <p
+                            className="card__repo-label"
+                          >
+                            Repositories
+                          </p>,
+                        ],
+                        "className": "card__repo-box",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": 9,
+                            "className": "card__repo-count",
+                          },
+                          "ref": null,
+                          "rendered": 9,
+                          "type": "p",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Repositories",
+                            "className": "card__repo-label",
+                          },
+                          "ref": null,
+                          "rendered": "Repositories",
+                          "type": "p",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "btnLabel": "Show me!",
+                        "goTo": "/reposList/GabrielSt",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "col-1-of-3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="row"
+        >
+          <div
+            className="col-1-of-3"
+          />
+          <div
+            className="col-1-of-3"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card__side card__side--front"
+              >
+                <div
+                  className="card__picture"
+                >
+                   
+                </div>
+                <img
+                  alt="User"
+                  className="card_user_img"
+                  src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                />
+                <h4
+                  className="card__heading"
+                >
+                  <span
+                    className="card__heading-span"
+                  >
+                    GabrielSt
+                  </span>
+                </h4>
+                <div
+                  className="card__details"
+                >
+                  <ul>
+                    <li>
+                      Email: 
+                    </li>
+                    <li>
+                      Bio: 
+                      Software developer in .net/React
+                    </li>
+                    <li>
+                      Followers: 
+                      0
+                    </li>
+                    <li>
+                      Following: 
+                      0
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="card__side card__side--back"
+              >
+                <div
+                  className="card__cta"
+                >
+                  <div
+                    className="card__repo-box"
+                  >
+                    <p
+                      className="card__repo-count"
+                    >
+                      9
+                    </p>
+                    <p
+                      className="card__repo-label"
+                    >
+                      Repositories
+                    </p>
+                  </div>
+                  <LinkButton
+                    btnLabel="Show me!"
+                    goTo="/reposList/GabrielSt"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-1-of-3"
+          />
+        </div>,
+        "className": "section-userProfile",
+        "id": "section-userProfile",
+      },
+      "ref": "userProfile",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col-1-of-3"
+            />,
+            <div
+              className="col-1-of-3"
+            >
+              <div
+                className="card"
+              >
+                <div
+                  className="card__side card__side--front"
+                >
+                  <div
+                    className="card__picture"
+                  >
+                     
+                  </div>
+                  <img
+                    alt="User"
+                    className="card_user_img"
+                    src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                  />
+                  <h4
+                    className="card__heading"
+                  >
+                    <span
+                      className="card__heading-span"
+                    >
+                      GabrielSt
+                    </span>
+                  </h4>
+                  <div
+                    className="card__details"
+                  >
+                    <ul>
+                      <li>
+                        Email: 
+                      </li>
+                      <li>
+                        Bio: 
+                        Software developer in .net/React
+                      </li>
+                      <li>
+                        Followers: 
+                        0
+                      </li>
+                      <li>
+                        Following: 
+                        0
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="card__side card__side--back"
+                >
+                  <div
+                    className="card__cta"
+                  >
+                    <div
+                      className="card__repo-box"
+                    >
+                      <p
+                        className="card__repo-count"
+                      >
+                        9
+                      </p>
+                      <p
+                        className="card__repo-label"
+                      >
+                        Repositories
+                      </p>
+                    </div>
+                    <LinkButton
+                      btnLabel="Show me!"
+                      goTo="/reposList/GabrielSt"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>,
+            <div
+              className="col-1-of-3"
+            />,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "col-1-of-3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="card"
+              >
+                <div
+                  className="card__side card__side--front"
+                >
+                  <div
+                    className="card__picture"
+                  >
+                     
+                  </div>
+                  <img
+                    alt="User"
+                    className="card_user_img"
+                    src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                  />
+                  <h4
+                    className="card__heading"
+                  >
+                    <span
+                      className="card__heading-span"
+                    >
+                      GabrielSt
+                    </span>
+                  </h4>
+                  <div
+                    className="card__details"
+                  >
+                    <ul>
+                      <li>
+                        Email: 
+                      </li>
+                      <li>
+                        Bio: 
+                        Software developer in .net/React
+                      </li>
+                      <li>
+                        Followers: 
+                        0
+                      </li>
+                      <li>
+                        Following: 
+                        0
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className="card__side card__side--back"
+                >
+                  <div
+                    className="card__cta"
+                  >
+                    <div
+                      className="card__repo-box"
+                    >
+                      <p
+                        className="card__repo-count"
+                      >
+                        9
+                      </p>
+                      <p
+                        className="card__repo-label"
+                      >
+                        Repositories
+                      </p>
+                    </div>
+                    <LinkButton
+                      btnLabel="Show me!"
+                      goTo="/reposList/GabrielSt"
+                    />
+                  </div>
+                </div>
+              </div>,
+              "className": "col-1-of-3",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="card__side card__side--front"
+                  >
+                    <div
+                      className="card__picture"
+                    >
+                       
+                    </div>
+                    <img
+                      alt="User"
+                      className="card_user_img"
+                      src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                    />
+                    <h4
+                      className="card__heading"
+                    >
+                      <span
+                        className="card__heading-span"
+                      >
+                        GabrielSt
+                      </span>
+                    </h4>
+                    <div
+                      className="card__details"
+                    >
+                      <ul>
+                        <li>
+                          Email: 
+                        </li>
+                        <li>
+                          Bio: 
+                          Software developer in .net/React
+                        </li>
+                        <li>
+                          Followers: 
+                          0
+                        </li>
+                        <li>
+                          Following: 
+                          0
+                        </li>
+                      </ul>
+                    </div>
+                  </div>,
+                  <div
+                    className="card__side card__side--back"
+                  >
+                    <div
+                      className="card__cta"
+                    >
+                      <div
+                        className="card__repo-box"
+                      >
+                        <p
+                          className="card__repo-count"
+                        >
+                          9
+                        </p>
+                        <p
+                          className="card__repo-label"
+                        >
+                          Repositories
+                        </p>
+                      </div>
+                      <LinkButton
+                        btnLabel="Show me!"
+                        goTo="/reposList/GabrielSt"
+                      />
+                    </div>
+                  </div>,
+                ],
+                "className": "card",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="card__picture"
+                      >
+                         
+                      </div>,
+                      <img
+                        alt="User"
+                        className="card_user_img"
+                        src="https://avatars2.githubusercontent.com/u/11239986?v=4"
+                      />,
+                      <h4
+                        className="card__heading"
+                      >
+                        <span
+                          className="card__heading-span"
+                        >
+                          GabrielSt
+                        </span>
+                      </h4>,
+                      <div
+                        className="card__details"
+                      >
+                        <ul>
+                          <li>
+                            Email: 
+                          </li>
+                          <li>
+                            Bio: 
+                            Software developer in .net/React
+                          </li>
+                          <li>
+                            Followers: 
+                            0
+                          </li>
+                          <li>
+                            Following: 
+                            0
+                          </li>
+                        </ul>
+                      </div>,
+                    ],
+                    "className": "card__side card__side--front",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": " ",
+                        "className": "card__picture",
+                      },
+                      "ref": null,
+                      "rendered": " ",
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "User",
+                        "className": "card_user_img",
+                        "src": "https://avatars2.githubusercontent.com/u/11239986?v=4",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <span
+                          className="card__heading-span"
+                        >
+                          GabrielSt
+                        </span>,
+                        "className": "card__heading",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "GabrielSt",
+                          "className": "card__heading-span",
+                        },
+                        "ref": null,
+                        "rendered": "GabrielSt",
+                        "type": "span",
+                      },
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <ul>
+                          <li>
+                            Email: 
+                          </li>
+                          <li>
+                            Bio: 
+                            Software developer in .net/React
+                          </li>
+                          <li>
+                            Followers: 
+                            0
+                          </li>
+                          <li>
+                            Following: 
+                            0
+                          </li>
+                        </ul>,
+                        "className": "card__details",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <li>
+                              Email: 
+                            </li>,
+                            <li>
+                              Bio: 
+                              Software developer in .net/React
+                            </li>,
+                            <li>
+                              Followers: 
+                              0
+                            </li>,
+                            <li>
+                              Following: 
+                              0
+                            </li>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "Email: ",
+                                null,
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Email: ",
+                              null,
+                            ],
+                            "type": "li",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "Bio: ",
+                                "Software developer in .net/React",
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Bio: ",
+                              "Software developer in .net/React",
+                            ],
+                            "type": "li",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "Followers: ",
+                                0,
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Followers: ",
+                              0,
+                            ],
+                            "type": "li",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "Following: ",
+                                0,
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Following: ",
+                              0,
+                            ],
+                            "type": "li",
+                          },
+                        ],
+                        "type": "ul",
+                      },
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="card__cta"
+                    >
+                      <div
+                        className="card__repo-box"
+                      >
+                        <p
+                          className="card__repo-count"
+                        >
+                          9
+                        </p>
+                        <p
+                          className="card__repo-label"
+                        >
+                          Repositories
+                        </p>
+                      </div>
+                      <LinkButton
+                        btnLabel="Show me!"
+                        goTo="/reposList/GabrielSt"
+                      />
+                    </div>,
+                    "className": "card__side card__side--back",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div
+                          className="card__repo-box"
+                        >
+                          <p
+                            className="card__repo-count"
+                          >
+                            9
+                          </p>
+                          <p
+                            className="card__repo-label"
+                          >
+                            Repositories
+                          </p>
+                        </div>,
+                        <LinkButton
+                          btnLabel="Show me!"
+                          goTo="/reposList/GabrielSt"
+                        />,
+                      ],
+                      "className": "card__cta",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <p
+                              className="card__repo-count"
+                            >
+                              9
+                            </p>,
+                            <p
+                              className="card__repo-label"
+                            >
+                              Repositories
+                            </p>,
+                          ],
+                          "className": "card__repo-box",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": 9,
+                              "className": "card__repo-count",
+                            },
+                            "ref": null,
+                            "rendered": 9,
+                            "type": "p",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Repositories",
+                              "className": "card__repo-label",
+                            },
+                            "ref": null,
+                            "rendered": "Repositories",
+                            "type": "p",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "btnLabel": "Show me!",
+                          "goTo": "/reposList/GabrielSt",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "col-1-of-3",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

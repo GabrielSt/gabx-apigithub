@@ -80,8 +80,8 @@ class ReposList extends Component {
 }
 
 ReposList.propTypes = {
-  requestRepoList: PropTypes.func.isRequired,
-  repositories: PropTypes.arrayOf(PropTypes.object).isRequired
+  repositories: PropTypes.arrayOf(PropTypes.object).isRequired,
+  activePage: PropTypes.number.isRequired
 };
 
 export default ReposList;

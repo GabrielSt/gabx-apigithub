@@ -8,11 +8,13 @@ import "./styles.css";
 class UserProfile extends Component {
   componentDidMount() {
     const tesNode = ReactDOM.findDOMNode(this.refs.userProfile);
-    window.scrollTo({
-      behavior: "smooth",
-      left: 0,
-      top: tesNode.offsetTop
-    });
+    if (tesNode !== null) {
+      window.scrollTo({
+        behavior: "smooth",
+        left: 0,
+        top: tesNode.offsetTop
+      });
+    }
   }
   render() {
     const user = this.props.user || {};

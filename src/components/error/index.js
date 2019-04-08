@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import UserError from "../resources/images/user-error.png";
-import GenericError from "../resources/images/error.png";
+import UserError from "../../resources/images/user-error.png";
+import GenericError from "../../resources/images/error.png";
 import ReactDOM from "react-dom";
 
 // import { Container } from './styles';
@@ -8,11 +8,13 @@ import ReactDOM from "react-dom";
 export default class Erro extends Component {
   componentDidMount() {
     const tesNode = ReactDOM.findDOMNode(this.refs.error);
-    window.scrollTo({
-      behavior: "smooth",
-      left: 0,
-      top: tesNode.offsetTop
-    });
+    if (tesNode !== null) {
+      window.scrollTo({
+        behavior: "smooth",
+        left: 0,
+        top: tesNode.offsetTop
+      });
+    }
   }
   render() {
     if (this.props.error === "userError") {
