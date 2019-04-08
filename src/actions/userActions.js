@@ -1,4 +1,4 @@
-import { USER_FETCHED, USER_REQUESTED } from "./constants";
+import { USER_FETCHED, USER_REQUESTED, REQUEST_USER_FAILED } from "./constants";
 import axios from "axios";
 import toastr from "toastr";
 
@@ -15,6 +15,7 @@ function getUser(name) {
         } else {
           toastr.error(err);
         }
+        dispatch(requestUserFailed());
       });
 }
 
@@ -28,6 +29,12 @@ function receiveUser(user) {
   return {
     type: USER_FETCHED,
     payload: user
+  };
+}
+
+function requestUserFailed() {
+  return {
+    type: REQUEST_USER_FAILED
   };
 }
 

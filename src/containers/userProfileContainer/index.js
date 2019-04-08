@@ -4,7 +4,6 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import UserProfile from "../../components/userProfile";
 import Error from "../../components/error";
-import _ from "lodash";
 
 import { requestUser } from "../../actions/userActions";
 
@@ -18,7 +17,7 @@ class UserProfileContainer extends Component {
     }
   }
   render() {
-    if (!_.isEmpty(this.props.user)) {
+    if (!this.props.requestFailed) {
       return <UserProfile {...this.props} />;
     } else {
       return <Error error="userError" />;
@@ -32,7 +31,8 @@ UserProfile.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  user: state.user.currentUser
+  user: state.user.currentUser,
+  requestFailed: state.user.requestFailed
 });
 
 const mapDispatchToProps = dispatch =>
