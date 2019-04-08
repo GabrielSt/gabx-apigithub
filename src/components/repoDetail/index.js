@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-
-import { requestRepo } from "../../actions/repoActions";
 
 import "./styles.css";
 
@@ -11,15 +7,11 @@ class RepoDetail extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
-  componentWillMount() {
-    this.props.requestRepo(
-      this.props.match.params.userName,
-      this.props.match.params.repoName
-    );
-  }
+
   handleClick() {
     window.location = this.props.repositorie.html_url;
   }
+
   render() {
     const { repositorie } = this.props;
     return (
@@ -49,14 +41,4 @@ class RepoDetail extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  repositorie: state.repositories.currentRepositorie
-});
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators({ requestRepo }, dispatch);
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(RepoDetail);
+export default RepoDetail;

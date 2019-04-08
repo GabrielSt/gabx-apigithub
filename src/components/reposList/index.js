@@ -1,17 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 import Pagination from "react-js-pagination";
 
 import "./styles.css";
-
-import {
-  requestRepoList,
-  changeActivePage,
-  sortRepos
-} from "../../actions/repoActions";
 
 class ReposList extends Component {
   constructor(props) {
@@ -19,10 +11,6 @@ class ReposList extends Component {
 
     this.handlePageClick = this.handlePageClick.bind(this);
     this.sortByField = this.sortByField.bind(this);
-  }
-
-  componentWillMount() {
-    this.props.requestRepoList(this.props.match.params.userName);
   }
 
   handlePageClick(eventKey) {
@@ -96,19 +84,4 @@ ReposList.propTypes = {
   repositories: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
-const mapStateToProps = state => ({
-  repositories: state.repositories.repoList,
-  activePage: state.repositories.activePage,
-  sortBy: state.repositories.sortBy
-});
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    { requestRepoList, changeActivePage, sortRepos },
-    dispatch
-  );
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ReposList);
+export default ReposList;

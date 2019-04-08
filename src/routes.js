@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./components/home";
 import UserProfile from "./containers/userProfileContainer";
-import ReposList from "./components/reposList";
-import RepoDetail from "./components/repoDetail";
+import ReposList from "./containers/reposListContainer";
+import RepoDetail from "./containers/repoDetailContainer";
 import Header from "./components/header";
 import Error from "./components/error";
 
